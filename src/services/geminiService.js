@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(API_KEY)
 
 export async function analyzeAnswer(question, answer, tips) {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" })
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
     
     const prompt = `You are an English speaking coach. Analyze this student's spoken answer.
 
